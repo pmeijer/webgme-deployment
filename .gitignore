@@ -1,0 +1,4 @@
+node_modules
+npm-debug.log
+aws/update.sh.log
+aws/config_local.js
