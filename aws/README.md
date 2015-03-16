@@ -33,6 +33,6 @@ webgme.org (editor) website specific instructions
 User management
 ===============
 
-`node node_modules/webgme/src/bin/usermanager.js useradd -c username email pass`
-`node node_modules/webgme/src/bin/usermanager.js usermod_auth -a r username SignalFlowSystem` default project
+- `node node_modules/webgme/src/bin/usermanager.js useradd -c username email pass`
+- `node node_modules/webgme/src/bin/usermanager.js usermod_auth -a r username SignalFlowSystem` default project
 
