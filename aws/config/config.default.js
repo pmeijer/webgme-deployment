@@ -3,14 +3,15 @@
  * @author lattmann / https://github.com/lattmann
  */
 
-var config = require('webgme/config/config.default');
+var config = require('webgme/config/config.default'),
+    os = require('os');
 
 config.server.port = 8001;
 
 config.authentication.enable = true;
 config.authentication.allowGuests = true;
 config.authentication.guestAccount = 'demo';
-config.authentication.logOutUrl = 'http://webgme.org'; // TODO: use here require('os'); os.hostname();
+config.authentication.logOutUrl = 'http://' + os.hostname(); // FIXME: use config.server.https.enable to decide on protocol
 
 config.rest.secure = true;
 
