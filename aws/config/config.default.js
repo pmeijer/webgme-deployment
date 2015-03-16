@@ -5,7 +5,18 @@
 
 var config = require('webgme/config/config.default');
 
-config.server.port = 80;
+config.server.port = 8001;
+
+config.authentication.enable = true;
+config.authentication.allowGuests = true;
+config.authentication.guestAccount = 'demo';
+config.authentication.logOutUrl = 'http://webgme.org'; // TODO: use here require('os'); os.hostname();
+
+config.rest.secure = true;
+
+config.client.defaultProject.name = 'SignalFlowSystem';
+config.client.defaultProject.branch = 'master';
+config.client.defaultProject.node = '/682825457'; //opens the FM Receiver
 
 //config.plugin.basePaths.push('./src/plugins/Test');
 //config.plugin.basePaths = ['./src/plugins/Test']; //disable exposure of core-plugins
