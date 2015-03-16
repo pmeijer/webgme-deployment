@@ -2,3 +2,5 @@ node_modules
 npm-debug.log
 aws/update.sh.log
 aws/config_local.js
+aws/server.log
+aws/blob-local-storage
