@@ -29,3 +29,10 @@ webgme.org (editor) website specific instructions
  * Restart nginx:
     ```sudo /etc/init.d/nginx restart```
  * Make sure, that config.js was customized to use internal port (8001)
+
+User management
+===============
+
+`node node_modules/webgme/src/bin/usermanager.js useradd -c username email pass`
+`node node_modules/webgme/src/bin/usermanager.js usermod_auth -a r username SignalFlowSystem` default project
+
