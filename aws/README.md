@@ -37,3 +37,13 @@ User management
 - `node node_modules/webgme/src/bin/usermanager.js useradd --canCreate username email pass`
 - `node node_modules/webgme/src/bin/usermanager.js usermod_auth -a r username SignalFlowSystem` default project
 
+To check the mongo database collections use run `mongo`
+
+```javascript
+show dbs
+use webgme
+db.getCollection('_users')
+db.getCollection('_organizations')
+
+db.getCollection('_users').findOne() // finds one user
+```
