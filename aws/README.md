@@ -33,6 +33,7 @@ webgme.org (editor) website specific instructions
 User management
 ===============
 
+- `cd ~/webgme-deployment/aws`
 - `node node_modules/webgme/src/bin/usermanager.js useradd --canCreate username email pass`
 - `node node_modules/webgme/src/bin/usermanager.js usermod_auth -a r username SignalFlowSystem` default project
 
