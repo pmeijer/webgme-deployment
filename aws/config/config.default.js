@@ -15,7 +15,7 @@ config.authentication.logOutUrl = 'http://' + os.hostname(); // FIXME: use confi
 
 config.rest.secure = true;
 
-config.client.defaultProject.name = 'SignalFlowSystem';
+config.client.defaultProject.name = 'demo+SignalFlowSystem';
 config.client.defaultProject.branch = 'master';
 config.client.defaultProject.node = '/682825457'; //opens the FM Receiver
 
