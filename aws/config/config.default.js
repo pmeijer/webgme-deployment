@@ -19,6 +19,8 @@ config.client.defaultProject.name = 'demo+SignalFlowSystem';
 config.client.defaultProject.branch = 'master';
 config.client.defaultProject.node = '/682825457'; //opens the FM Receiver
 
+config.visualization.decoratorPaths.push('./src/decorators');
+
 //config.plugin.basePaths.push('./src/plugins/Test');
 //config.plugin.basePaths = ['./src/plugins/Test']; //disable exposure of core-plugins
 
