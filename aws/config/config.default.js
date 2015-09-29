@@ -15,9 +15,9 @@ config.authentication.logOutUrl = 'http://' + os.hostname(); // FIXME: use confi
 
 config.rest.secure = true;
 
-config.client.defaultProject.name = 'demo+SignalFlowSystem';
-config.client.defaultProject.branch = 'master';
-config.client.defaultProject.node = '/682825457'; //opens the FM Receiver
+config.client.defaultContext.project = 'demo+SignalFlowSystem';
+config.client.defaultContext.branch = 'master';
+config.client.defaultContext.node = '/682825457'; //opens the FM Receiver
 
 config.visualization.decoratorPaths.push('./src/decorators');
 
@@ -27,7 +27,7 @@ config.visualization.decoratorPaths.push('./src/decorators');
 config.plugin.allowServerExecution = false;
 config.executor.enable = false;
 config.addOn.enable = false;
-
+config.storage.emitCommittedCoreObjects = true;
 config.mongo.uri = 'mongodb://127.0.0.1:27017/webgme';
-
+//config.socketIO.multiplex = false;
 module.exports = config;
