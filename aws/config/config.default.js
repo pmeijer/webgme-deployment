@@ -19,6 +19,8 @@ config.client.defaultContext.project = 'demo+SignalFlowSystem';
 config.client.defaultContext.branch = 'master';
 config.client.defaultContext.node = '/682825457'; //opens the FM Receiver
 
+config.client.usedDecorators.push('LogicGatesDecorator');
+
 config.visualization.decoratorPaths.push('./src/decorators');
 
 //config.plugin.basePaths.push('./src/plugins/Test');
