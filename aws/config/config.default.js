@@ -20,6 +20,7 @@ config.client.defaultContext.branch = 'master';
 config.client.defaultContext.node = '/682825457'; //opens the FM Receiver
 
 config.client.usedDecorators.push('LogicGatesDecorator');
+config.client.usedDecorators.push('PetriNetDecorator');
 
 config.visualization.decoratorPaths.push('./src/decorators');
 
