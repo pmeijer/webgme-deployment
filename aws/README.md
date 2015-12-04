@@ -9,7 +9,7 @@ Setup instructions on AWS EC2 machines
  * Tweak `.ssh/authorized_keys`
  * Run `sudo apt-get -y install git build-essential curl mongodb`
  * Copy (overwrite) 'mongodb.conf' to '/etc/mongodb.conf' and restart mongodb (`sudo restart mongodb`)
- * Run `curl -sL https://deb.nodesource.com/setup | sudo bash -`
+ * Run `curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
  * Run `sudo  apt-get install -y nodejs`
  * Clone the webgme-deployment project to the home folder (or whatever, just update `/etc/init/webgme.conf` later):
      ```git clone https://github.com/webgme/webgme-deployment.git```
